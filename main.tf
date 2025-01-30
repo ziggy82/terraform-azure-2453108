@@ -1,5 +1,12 @@
-#Creates resource group
-resource "azurerm_resource_group" "main" {
-  name     = "learn-tf-rg-eastus"
-  location = "eastus"
+terraform {
+  required_providers {
+    azurerm = {
+      source = "hashicorp/azurerm"
+      version = "4.16.0"
+    }
+  }
+}
+
+provider "azurerm" {
+  # Configuration options
 }
